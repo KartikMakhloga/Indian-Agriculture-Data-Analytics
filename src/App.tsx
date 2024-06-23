@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { MantineProvider, Container } from '@mantine/core';
+import AggregatedTable from './components/AggregatedTable';
+import CropAverageTable from './components/CropAverageTable';
+import { aggregateYearlyData, aggregateCropData } from './dataProcessing';
+import '@mantine/core/styles.css';
 
-function App() {
+const App: React.FC = () => {
+  const yearlyData = aggregateYearlyData();
+  const cropData = aggregateCropData();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MantineProvider>
+      <Container size="lg" style={{ padding: '2rem' }}>
+        <div>
+          <h1 style={{ textAlign: 'center', marginBottom: '2rem' }}>Indian Agriculture Data Analytics</h1>
+          <AggregatedTable data={yearlyData} />
+          <br />
+          <CropAverageTable data={cropData} />
+        </div>
+      </Container>
+    </MantineProvider>
   );
-}
+};
 
 export default App;
