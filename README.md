@@ -19,3 +19,15 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `Screenshots`
+
+![alt text](https://github.com/KartikMakhloga/Indian-Agriculture-Data-Analytics/blob/main/public/Capture1.PNG)
+
+![alt text](https://github.com/KartikMakhloga/Indian-Agriculture-Data-Analytics/blob/main/public/Capture2.PNG)
+
+![alt text](https://github.com/KartikMakhloga/Indian-Agriculture-Data-Analytics/blob/main/public/Capture3.PNG)
+
+![alt text](https://github.com/KartikMakhloga/Indian-Agriculture-Data-Analytics/blob/main/public/Capture4.PNG)
+
+![alt text](https://github.com/KartikMakhloga/Indian-Agriculture-Data-Analytics/blob/main/public/Capture5.PNG)
